@@ -1,17 +1,6 @@
-const ITEMS = [
-  "NIST CSF 2.0",
-  "CIS Critical Controls",
-  "SOC 2 Type II",
-  "NERC CIP",
-  "NIST 800-53",
-  "SIEM Engineering",
-  "Threat Hunting",
-  "Incident Response",
-  "DDoS Mitigation",
-  "Forensic Triage",
-  "Zero Non-Conformances",
-  "10M+ Customers Secured",
-];
+import content from "@/data/content.json";
+
+const ITEMS: string[] = content.marquee;
 
 export function Marquee() {
   const row = [...ITEMS, ...ITEMS];

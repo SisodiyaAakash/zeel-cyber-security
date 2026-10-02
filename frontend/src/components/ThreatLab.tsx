@@ -1,39 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tag, Reveal, EASE } from "@/components/Section";
+import content from "@/data/content.json";
 
 type Option = { label: string; correct: boolean; feedback: string };
 type Step = { alert: string; prompt: string; options: Option[] };
 
-const STEPS: Step[] = [
-  {
-    alert: "ALERT 09:41:07 - SIEM flags ransomware behaviour on substation host HMI-04",
-    prompt: "First move?",
-    options: [
-      { label: "Reboot the HMI to clear the process", correct: false, feedback: "Rebooting destroys volatile evidence. The threat persists in the image." },
-      { label: "Isolate host, capture volatile memory", correct: true, feedback: "Correct. Contain first, preserve forensics - blast radius stops here." },
-      { label: "Dismiss - likely a false positive", correct: false, feedback: "Ransomware on OT gear is never dismissed. Escalation missed." },
-    ],
-  },
-  {
-    alert: "HOST ISOLATED - logs show PowerShell spawned by winword.exe, beaconing to 185.220.x.x",
-    prompt: "Next action?",
-    options: [
-      { label: "Block hash fleet-wide, blacklist the C2 IP", correct: true, feedback: "Correct. Custom containment rules cut command & control across the grid." },
-      { label: "Delete the document, close the ticket", correct: false, feedback: "The payload is already staged elsewhere. Ticket closed, breach open." },
-      { label: "Email the user asking what they opened", correct: false, feedback: "Every minute of dwell time widens the compromise. Act, then interview." },
-    ],
-  },
-  {
-    alert: "C2 SEVERED - scope unknown. 400+ endpoints share the same image.",
-    prompt: "Final sweep?",
-    options: [
-      { label: "Restore HMI-04 from backup, move on", correct: false, feedback: "Without a retro-hunt you restore blind - sibling infections stay live." },
-      { label: "Retro-hunt IoCs in Splunk, force cred resets", correct: true, feedback: "Correct. Full-scope hunt + credential hygiene. Incident closed at root cause." },
-      { label: "Raise the SIEM alert threshold", correct: false, feedback: "Quieter dashboards, louder breach. Tuning is not remediation." },
-    ],
-  },
-];
+const STEPS: Step[] = content.threatLab.steps;
 
 export function ThreatLab() {
   const [started, setStarted] = useState(false);

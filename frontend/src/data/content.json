@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "links": [
+      { "label": "Profile", "href": "#about" },
+      { "label": "Arsenal", "href": "#skills" },
+      { "label": "Deployments", "href": "#experience" },
+      { "label": "Threat Lab", "href": "#lab" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "// Zeel Chaudhari - Security Operations Center",
+    "subcopy": "Cybersecurity Analyst with 5+ years in SOC operations, threat detection and incident response across energy, utilities and enterprise environments - turning raw telemetry into containment.",
+    "resumeUrl": "https://customer-assets-m6fa6gv7.emergentagent.net/job_resume-portfolio-382/artifacts/4pobgiux_Zeel-Chaudhari-CyberSecurity-Analyst.pdf",
+    "terminalLines": [
+      { "text": "$ zeel --status", "tone": "cmd" },
+      { "text": "> role     : Cybersecurity Analyst · SOC Tier-2", "tone": "info" },
+      { "text": "> focus    : threat hunting · IR · SIEM engineering", "tone": "info" },
+      { "text": "> stack    : ArcSight / Splunk / LogRhythm / SNORT", "tone": "info" },
+      { "text": "> status   : OPEN TO OPPORTUNITIES", "tone": "ok" }
+    ],
+    "stats": [
+      { "value": "5+", "label": "Years in SOC Ops" },
+      { "value": "10M+", "label": "Customers Defended" },
+      { "value": "02", "label": "DOE Audits Passed" },
+      { "value": "1500+", "label": "Employee Site Secured" }
+    ]
+  },
+  "marquee": [
+    "NIST CSF 2.0",
+    "CIS Critical Controls",
+    "SOC 2 Type II",
+    "NERC CIP",
+    "NIST 800-53",
+    "SIEM Engineering",
+    "Threat Hunting",
+    "Incident Response",
+    "DDoS Mitigation",
+    "Forensic Triage",
+    "Zero Non-Conformances",
+    "10M+ Customers Secured"
+  ],
+  "about": {
+    "paragraphs": [
+      "I'm Zeel Chaudhari - a Cybersecurity Analyst with 5+ years of progressive experience across energy, utilities and enterprise environments. At Oncor Electric Delivery, the largest regulated transmission and distribution utility in Texas, I monitor and defend IT/OT infrastructure serving over 10 million customers against DDoS campaigns, malware outbreaks and unauthorized access.",
+      "My craft lives in the SIEM - ArcSight, Splunk, LogRhythm - fine-tuning correlation rules until the alerts that fire are the alerts that matter. I've supported two Department of Energy security audits to successful certification, led SOC bridge calls under pressure, and documented the playbooks that make the next response faster than the last."
+    ],
+    "principles": [
+      { "k": "DETECT", "v": "Fine-tuned correlation rules, dashboards and alerts that surface real threats - not noise." },
+      { "k": "HUNT", "v": "Packet analysis (SNORT), log correlation and malware sandboxing to find root cause." },
+      { "k": "CONTAIN", "v": "IP blacklisting, firewall policy and custom rules that shrink exposure fast." },
+      { "k": "HARDEN", "v": "NIST CSF, CIS Controls and SOC 2 alignment proven across DOE audit cycles." }
+    ]
+  },
+  "skills": {
+    "cells": [
+      {
+        "size": "wide",
+        "idx": "A1",
+        "title": "SIEM & Threat Telemetry",
+        "desc": "Real-time monitoring, correlation-rule engineering and alert triage at utility scale.",
+        "tags": ["ArcSight", "Splunk", "LogRhythm", "SNORT", "Cisco IPS", "Proofpoint", "WAF", "Symantec Endpoint"]
+      },
+      {
+        "size": "narrow",
+        "idx": "A2",
+        "title": "Scripting & Automation",
+        "desc": "Parsing, hunting and response automation.",
+        "tags": ["Python", "Bash", "Ruby", "C", "C++", "SQL"]
+      },
+      {
+        "size": "narrow",
+        "idx": "B1",
+        "title": "Cloud & DevSecOps",
+        "desc": "Security wired into the pipeline.",
+        "tags": ["AWS", "Terraform", "GitLab", "GitHub Enterprise", "CircleCI"]
+      },
+      {
+        "size": "wide",
+        "idx": "B2",
+        "title": "Governance, Compliance & Containment",
+        "desc": "Frameworks proven in audits; network-level containment under fire.",
+        "tags": ["NIST 800-53", "NIST CSF", "SOC 2", "CIS Controls", "NERC CIP", "Akamai", "Arbor DDoS", "Fortinet"]
+      }
+    ],
+    "footnote": "+ Windows · Linux · macOS · ServiceNow · JIRA · Confluence"
+  },
+  "experience": {
+    "roles": [
+      {
+        "id": "oncor",
+        "company": "Oncor Electric Delivery",
+        "location": "Texas, USA",
+        "role": "Cybersecurity Analyst",
+        "period": "Nov 2022 - Present",
+        "current": true,
+        "brief": "Defending the largest regulated electric transmission & distribution utility in Texas - 10M+ customers - across IT and OT environments, aligned to NERC CIP.",
+        "bullets": [
+          "Monitored and analyzed security events using ArcSight, Splunk and LogRhythm to detect threats and initiate incident response.",
+          "Investigated and triaged alerts from firewalls, IPS/IDS systems, proxies, antivirus software and endpoints.",
+          "Performed SNORT-based packet analysis and log correlation; verified custom rules and responded to incidents effectively.",
+          "Managed DDoS mitigation using Akamai and Arbor - traffic profiling, baseline thresholds and cloud mitigation strategies.",
+          "Implemented IP blacklisting and whitelisting procedures at the network level for threat containment."
+        ],
+        "env": "ArcSight · Splunk · LogRhythm · Palo Alto · Check Point · SNORT · Akamai · Arbor"
+      },
+      {
+        "id": "nerpcrop",
+        "company": "Nerpcrop Systems Pvt. Ltd.",
+        "location": "Hyderabad, India",
+        "role": "Cybersecurity Analyst",
+        "period": "Nov 2020 - Oct 2022",
+        "current": false,
+        "brief": "Enterprise security & compliance - policy frameworks, risk assessments and mission-critical government audits for a 1,500+ employee site.",
+        "bullets": [
+          "Developed, reviewed and updated security policies aligned with NIST 800-53, ensuring compliance and audit readiness.",
+          "Supported two Department of Energy security audits with evidence, remediation plans and gap closures - contributing to successful certification.",
+          "Conducted periodic risk assessments and security inspections for a 1,500+ employee site, validating control effectiveness.",
+          "Monitored and investigated SIEM alerts (Splunk, ArcSight, LogRhythm), escalating per SOC process and reducing incident response time.",
+          "Delivered security awareness sessions and documented incident reports, lessons learned and process improvement plans."
+        ],
+        "env": "Splunk · ArcSight · LogRhythm · NIST 800-53 · IDS/IPS · Vulnerability Mgmt"
+      }
+    ],
+    "education": "EDUCATION - B.Tech, Computer Science & Engineering"
+  },
+  "threatLab": {
+    "steps": [
+      {
+        "alert": "ALERT 09:41:07 - SIEM flags ransomware behaviour on substation host HMI-04",
+        "prompt": "First move?",
+        "options": [
+          { "label": "Reboot the HMI to clear the process", "correct": false, "feedback": "Rebooting destroys volatile evidence. The threat persists in the image." },
+          { "label": "Isolate host, capture volatile memory", "correct": true, "feedback": "Correct. Contain first, preserve forensics - blast radius stops here." },
+          { "label": "Dismiss - likely a false positive", "correct": false, "feedback": "Ransomware on OT gear is never dismissed. Escalation missed." }
+        ]
+      },
+      {
+        "alert": "HOST ISOLATED - logs show PowerShell spawned by winword.exe, beaconing to 185.220.x.x",
+        "prompt": "Next action?",
+        "options": [
+          { "label": "Block hash fleet-wide, blacklist the C2 IP", "correct": true, "feedback": "Correct. Custom containment rules cut command & control across the grid." },
+          { "label": "Delete the document, close the ticket", "correct": false, "feedback": "The payload is already staged elsewhere. Ticket closed, breach open." },
+          { "label": "Email the user asking what they opened", "correct": false, "feedback": "Every minute of dwell time widens the compromise. Act, then interview." }
+        ]
+      },
+      {
+        "alert": "C2 SEVERED - scope unknown. 400+ endpoints share the same image.",
+        "prompt": "Final sweep?",
+        "options": [
+          { "label": "Restore HMI-04 from backup, move on", "correct": false, "feedback": "Without a retro-hunt you restore blind - sibling infections stay live." },
+          { "label": "Retro-hunt IoCs in Splunk, force cred resets", "correct": true, "feedback": "Correct. Full-scope hunt + credential hygiene. Incident closed at root cause." },
+          { "label": "Raise the SIEM alert threshold", "correct": false, "feedback": "Quieter dashboards, louder breach. Tuning is not remediation." }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "channels": [
+      { "label": "EMAIL", "value": "zeelchaudhari119@gmail.com", "href": "mailto:zeelchaudhari119@gmail.com", "testid": "contact-email-link" },
+      { "label": "PHONE", "value": "+1 (609) 775-9747", "href": "tel:+16097759747", "testid": "contact-phone-link" },
+      { "label": "LINKEDIN", "value": "zeel-chaudhari-7432832b1", "href": "https://linkedin.com/in/zeel-chaudhari-7432832b1", "testid": "contact-linkedin-link" }
+    ]
+  },
+  "footer": {
+    "brand": "ZC // SOC-DEFENSE - Zeel Chaudhari",
+    "tagline": "Detect. Hunt. Contain. Harden."
+  }
+}

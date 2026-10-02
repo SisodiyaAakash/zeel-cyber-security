@@ -1,10 +1,7 @@
 import { Tag, Reveal } from "@/components/Section";
+import content from "@/data/content.json";
 
-const CHANNELS = [
-  { label: "EMAIL", value: "zeelchaudhari119@gmail.com", href: "mailto:zeelchaudhari119@gmail.com", testid: "contact-email-link" },
-  { label: "PHONE", value: "+1 (609) 775-9747", href: "tel:+16097759747", testid: "contact-phone-link" },
-  { label: "LINKEDIN", value: "zeel-chaudhari-7432832b1", href: "https://linkedin.com/in/zeel-chaudhari-7432832b1", testid: "contact-linkedin-link" },
-];
+const CHANNELS = content.contact.channels;
 
 export function Contact() {
   return (

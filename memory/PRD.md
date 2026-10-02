@@ -4,9 +4,10 @@
 "Build a landing page: Based on this resume create portfolio website" — source: Zeel Chaudhari's Cybersecurity Analyst resume PDF (SOC operations, threat detection, incident response; Oncor Electric Delivery TX, Nerpcrop Systems Hyderabad).
 
 ## Architecture
-- Frontend: Vite + React 19 + TS strict, Tailwind v4, framer-motion (kinetic reveals), Lenis (momentum scroll), sonner toasts, shadcn/ui inputs. Single-page at `/` (`src/pages/Home.tsx`).
-- Backend: FastAPI, `api_router` prefix `/api`; `routers/contact.py` → POST `/api/contact` (Pydantic + EmailStr validation) persists to MongoDB `inquiries` collection (uuid4 string ids, aware-UTC timestamps).
-- Design: dark "SOC terminal" archetype — obsidian #090B0E, emerald #10B981, radar cyan #0EA5E9; Space Grotesk (headings) / IBM Plex Sans (body) / JetBrains Mono (labels). Spec in `/app/design_guidelines.json`.
+- **Fully static frontend** (converted 2026-10-02): Vite + React 19 + TS strict, Tailwind v4, framer-motion, Lenis, sonner. No backend calls — zero `/api` requests at runtime.
+- All content data lives in `frontend/src/data/content.json` (hero, stats, marquee, about, skills, experience, threat-lab steps, contact channels, nav, footer); components import and render it. Styling stays in components.
+- Backend (`backend/`) still exists in the pod but is unused by the frontend; the app deploys as a static bundle.
+- Design: dark "SOC terminal" archetype — obsidian #090B0E, emerald #10B981, radar cyan #0EA5E9; Space Grotesk / IBM Plex Sans / JetBrains Mono. Spec in `/app/design_guidelines.json`.
 
 ## User personas
 - Recruiter/hiring manager evaluating a SOC analyst (scans hero, experience, downloads résumé, sends inquiry).

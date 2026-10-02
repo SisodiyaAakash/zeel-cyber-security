@@ -1,11 +1,7 @@
 import { Tag, Reveal } from "@/components/Section";
+import content from "@/data/content.json";
 
-const PRINCIPLES = [
-  { k: "DETECT", v: "Fine-tuned correlation rules, dashboards and alerts that surface real threats - not noise." },
-  { k: "HUNT", v: "Packet analysis (SNORT), log correlation and malware sandboxing to find root cause." },
-  { k: "CONTAIN", v: "IP blacklisting, firewall policy and custom rules that shrink exposure fast." },
-  { k: "HARDEN", v: "NIST CSF, CIS Controls and SOC 2 alignment proven across DOE audit cycles." },
-];
+const PRINCIPLES = content.about.principles;
 
 export function About() {
   return (
@@ -22,21 +18,12 @@ export function About() {
           </Reveal>
           <Reveal delay={0.18}>
             <p className="mt-6 text-base leading-relaxed text-slate-400">
-              I'm Zeel Chaudhari - a Cybersecurity Analyst with 5+ years of progressive
-              experience across energy, utilities and enterprise environments. At Oncor
-              Electric Delivery, the largest regulated transmission and distribution
-              utility in Texas, I monitor and defend IT/OT infrastructure serving over
-              10 million customers against DDoS campaigns, malware outbreaks and
-              unauthorized access.
+              {content.about.paragraphs[0]}
             </p>
           </Reveal>
           <Reveal delay={0.24}>
             <p className="mt-4 text-base leading-relaxed text-slate-400">
-              My craft lives in the SIEM - ArcSight, Splunk, LogRhythm - fine-tuning
-              correlation rules until the alerts that fire are the alerts that matter.
-              I've supported two Department of Energy security audits to successful
-              certification, led SOC bridge calls under pressure, and documented the
-              playbooks that make the next response faster than the last.
+              {content.about.paragraphs[1]}
             </p>
           </Reveal>
         </div>

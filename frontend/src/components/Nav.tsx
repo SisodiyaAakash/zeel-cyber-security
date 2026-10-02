@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/Logo";
+import content from "@/data/content.json";
 
-const LINKS = [
-  { label: "Profile", href: "#about" },
-  { label: "Arsenal", href: "#skills" },
-  { label: "Deployments", href: "#experience" },
-  { label: "Threat Lab", href: "#lab" },
-];
+const LINKS = content.nav.links;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);

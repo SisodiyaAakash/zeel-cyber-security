@@ -1,35 +1,12 @@
 import { Tag, Reveal } from "@/components/Section";
+import content from "@/data/content.json";
 
-const CELLS = [
-  {
-    span: "lg:col-span-8",
-    idx: "A1",
-    title: "SIEM & Threat Telemetry",
-    desc: "Real-time monitoring, correlation-rule engineering and alert triage at utility scale.",
-    tags: ["ArcSight", "Splunk", "LogRhythm", "SNORT", "Cisco IPS", "Proofpoint", "WAF", "Symantec Endpoint"],
-  },
-  {
-    span: "lg:col-span-4",
-    idx: "A2",
-    title: "Scripting & Automation",
-    desc: "Parsing, hunting and response automation.",
-    tags: ["Python", "Bash", "Ruby", "C", "C++", "SQL"],
-  },
-  {
-    span: "lg:col-span-4",
-    idx: "B1",
-    title: "Cloud & DevSecOps",
-    desc: "Security wired into the pipeline.",
-    tags: ["AWS", "Terraform", "GitLab", "GitHub Enterprise", "CircleCI"],
-  },
-  {
-    span: "lg:col-span-8",
-    idx: "B2",
-    title: "Governance, Compliance & Containment",
-    desc: "Frameworks proven in audits; network-level containment under fire.",
-    tags: ["NIST 800-53", "NIST CSF", "SOC 2", "CIS Controls", "NERC CIP", "Akamai", "Arbor DDoS", "Fortinet"],
-  },
-];
+const SPANS: Record<string, string> = {
+  wide: "lg:col-span-8",
+  narrow: "lg:col-span-4",
+};
+
+const CELLS = content.skills.cells.map((c) => ({ ...c, span: SPANS[c.size] }));
 
 export function Skills() {
   return (
@@ -73,7 +50,7 @@ export function Skills() {
         </div>
         <Reveal delay={0.2}>
           <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            + Windows · Linux · macOS · ServiceNow · JIRA · Confluence
+            {content.skills.footnote}
           </p>
         </Reveal>
       </div>

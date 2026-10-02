@@ -7,9 +7,9 @@ import {
   useReducedMotion,
 } from "framer-motion";
 import { EASE } from "@/components/Section";
+import content from "@/data/content.json";
 
-const RESUME_URL =
-  "https://customer-assets-m6fa6gv7.emergentagent.net/job_resume-portfolio-382/artifacts/4pobgiux_Zeel-Chaudhari-CyberSecurity-Analyst.pdf";
+const RESUME_URL = content.hero.resumeUrl;
 
 function MaskedLine({ children, delay, reduced }: { children: ReactNode; delay: number; reduced: boolean }) {
   return (
@@ -60,13 +60,12 @@ function Radar() {
 }
 
 function Terminal() {
-  const lines = [
-    { text: "$ zeel --status", cls: "text-sky-400" },
-    { text: "> role     : Cybersecurity Analyst · SOC Tier-2", cls: "text-slate-300" },
-    { text: "> focus    : threat hunting · IR · SIEM engineering", cls: "text-slate-300" },
-    { text: "> stack    : ArcSight / Splunk / LogRhythm / SNORT", cls: "text-slate-300" },
-    { text: "> status   : OPEN TO OPPORTUNITIES", cls: "text-emerald-400" },
-  ];
+  const TONES: Record<string, string> = {
+    cmd: "text-sky-400",
+    info: "text-slate-300",
+    ok: "text-emerald-400",
+  };
+  const lines = content.hero.terminalLines.map((l) => ({ ...l, cls: TONES[l.tone] }));
   return (
     <div className="scanlines relative border border-slate-800 bg-[#0B1015] p-5 font-mono text-[11px] sm:text-xs leading-6 overflow-hidden">
       <div className="flex gap-1.5 mb-4">
@@ -95,12 +94,7 @@ function Terminal() {
   );
 }
 
-const STATS = [
-  { value: "5+", label: "Years in SOC Ops" },
-  { value: "10M+", label: "Customers Defended" },
-  { value: "02", label: "DOE Audits Passed" },
-  { value: "1500+", label: "Employee Site Secured" },
-];
+const STATS = content.hero.stats;
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -139,9 +133,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.65, duration: 0.7, ease: EASE }}
             >
-              Cybersecurity Analyst with 5+ years in SOC operations, threat detection and
-              incident response across energy, utilities and enterprise environments -
-              turning raw telemetry into containment.
+              {content.hero.subcopy}
             </motion.p>
             <motion.div
               className="mt-9 flex flex-wrap gap-4"

@@ -1,4 +1,5 @@
 import { Logo } from "@/components/Logo";
+import content from "@/data/content.json";
 
 export function Footer() {
   return (
@@ -7,11 +8,11 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <Logo size={26} />
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            ZC // SOC-DEFENSE - Zeel Chaudhari
+            {content.footer.brand}
           </span>
         </div>
         <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-600">
-          © {new Date().getFullYear()} · Detect. Hunt. Contain. Harden.
+          © {new Date().getFullYear()} · {content.footer.tagline}
         </p>
       </div>
     </footer>
