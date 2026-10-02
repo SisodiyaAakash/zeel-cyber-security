@@ -9,7 +9,7 @@ import {
 import { EASE } from "@/components/Section";
 
 const RESUME_URL =
-  "https://customer-assets-v7afamib.emergentagent.net/job_231fa876-2dae-4300-a42e-c9460ce84043/artifacts/ejrw9767_Zeel%20Dashrathbhai-%20Cybersecurity%20Engineer%20%20%284%29.pdf";
+  "https://customer-assets-m6fa6gv7.emergentagent.net/job_resume-portfolio-382/artifacts/4pobgiux_Zeel-Chaudhari-CyberSecurity-Analyst.pdf";
 
 function MaskedLine({ children, delay, reduced }: { children: ReactNode; delay: number; reduced: boolean }) {
   return (

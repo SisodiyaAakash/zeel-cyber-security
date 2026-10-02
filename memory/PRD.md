@@ -18,18 +18,17 @@
 
 ## Implemented (2026-10-02)
 - Full single-page portfolio with all sections above; real resume data throughout.
-- POST /api/contact with validation → MongoDB; sonner success/error toasts.
-- Résumé download links to the original PDF artifact.
-- Verified: `yarn typecheck` clean; contact POST 201 + 422 negative case via public URL; browser pass (hero, skills, lab flow, form submit) via screenshots.
+- Contact section: direct channels only (email, phone, LinkedIn) — form removed per user request, along with the backend /api/contact endpoint.
+- Résumé download links to the updated artifact PDF (Zeel-Chaudhari-CyberSecurity-Analyst.pdf).
+- Verified: `yarn typecheck` clean; browser pass (hero, skills, lab flow) via screenshots.
 
 ## Backlog
-- P1: Admin view or email notification (Resend) for new inquiries.
 - P1: Analytics/visit counter.
 - P2: Blog/write-ups section (incident retrospectives).
 - P2: Certifications section when Zeel adds them.
 - P2: More Threat Lab scenarios (phishing, DDoS drill).
 
 ## Next tasks
-1. Wire Resend email alerts for new contact submissions (managed integration, no key needed).
-2. Add a password-gated `/admin` inbox listing inquiries from MongoDB.
-3. Expand Threat Lab with 2 more scenarios.
+1. Expand Threat Lab with 2 more scenarios.
+2. Add a certifications shelf when Zeel earns certs (Security+, CEH).
+3. Add a projects/write-ups section.
