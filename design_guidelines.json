@@ -1,0 +1,222 @@
+{
+  "theme": "dark",
+  "project_title": "Zeel Chaudhari — Cybersecurity & SOC Analyst Portfolio",
+  "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST + ARCHETYPE 7: ELECTRIC & TERMINAL (Precision SOC Engineering)",
+  "typography": {
+    "font_family_heading": "Space Grotesk Variable, sans-serif",
+    "font_family_body": "IBM Plex Sans, sans-serif",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "hierarchy_rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-[1.05] uppercase",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight text-foreground",
+      "h4": "text-lg sm:text-xl font-medium tracking-normal text-foreground",
+      "body": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm font-medium tracking-normal text-muted-foreground",
+      "mono_label": "font-mono text-xs uppercase tracking-[0.2em] text-emerald-400"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#090B0E",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "card_elevated",
+        "kind": "solid",
+        "bg": "#11161D",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1E293B",
+          "border_hover": "#10B981",
+          "accent_highlight": "#10B981"
+        }
+      },
+      {
+        "name": "terminal_card",
+        "kind": "solid",
+        "bg": "#0B1015",
+        "on_bg": "#E2E8F0",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "cursor": "#10B981",
+          "keyword": "#38BDF8",
+          "string": "#34D399",
+          "comment": "#64748B"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#0A0D12",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(9,11,14,0.7) 0%, rgba(9,11,14,0.95) 100%), backdrop-blur-[2px]",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#34D399",
+          "accent": "#10B981",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "glass_nav",
+        "kind": "glass",
+        "contrast_against": "#090B0E",
+        "guarantee": "bg-[#090B0E]/85 backdrop-blur-xl border-b border-white/10",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "status_badge",
+        "kind": "solid",
+        "bg": "#064E3B",
+        "on_bg": "#ECFDF5",
+        "on_bg_muted": "#A7F3D0"
+      }
+    ],
+    "accent": "#10B981",
+    "on_accent": "#022C22",
+    "brand_highlights": {
+      "radar_cyan": "#0EA5E9",
+      "alert_amber": "#F59E0B",
+      "terminal_green": "#10B981",
+      "deep_slate": "#1E293B"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split editorial hero — kinetic masked headline + live threat radar visual left, quick metrics & terminal card right"
+  },
+  "layout_and_bento": {
+    "grid_structure": "mode_a_tetris",
+    "sections": [
+      {
+        "id": "hero",
+        "title": "Kinetic Hero with Threat Radar & Masked Typography",
+        "components": ["KineticHero", "LiveRadarWidget", "TerminalTeaser", "QuickActionPill"]
+      },
+      {
+        "id": "editorial_strip",
+        "title": "Slow Living Editorial Ribbon",
+        "description": "Continuous marquee with defense metrics, standards (NIST CSF 2.0, CIS Controls, SOC2 Type II, DOE C2M2), and operational highlights"
+      },
+      {
+        "id": "about_soc",
+        "title": "About Zeel Chaudhari — The SOC Vanguard",
+        "description": "Narrative breakdown: 5+ years defending critical infrastructure & enterprise networks, 2 DOE audits passed, 10M+ customers secured"
+      },
+      {
+        "id": "skills_bento",
+        "title": "Asymmetric Bento Grid of Core Competencies",
+        "cells": [
+          {"span": "col-span-12 lg:col-span-8", "title": "SIEM & Threat Telemetry", "tags": ["ArcSight ESM", "Splunk Enterprise Security", "LogRhythm", "Wireshark", "Suricata", "Zeek"]},
+          {"span": "col-span-12 sm:col-span-6 lg:col-span-4", "title": "Scripting & Automation", "tags": ["Python (pySigma/SOAR)", "Bash", "SQL (Log Analysis)"]},
+          {"span": "col-span-12 sm:col-span-6 lg:col-span-4", "title": "Cloud & IaC Defense", "tags": ["AWS GuardDuty", "AWS Security Hub", "Terraform", "CloudTrail"]},
+          {"span": "col-span-12 lg:col-span-8", "title": "Governance & Compliance", "tags": ["NIST 800-53/800-61", "SOC2 Type II", "CIS Critical Controls", "DOE C2M2 Audits", "NERC CIP"]}
+        ]
+      },
+      {
+        "id": "experience_timeline",
+        "title": "Operational Career Timeline (2 Key Deployments)",
+        "items": [
+          {
+            "role": "Cybersecurity & SOC Analyst",
+            "company": "Oncor Electric Delivery",
+            "location": "Texas, USA",
+            "period": "2021 — Present",
+            "highlights": [
+              "Monitored and triaged 10,000+ daily telemetry events across 10M+ customer utility grid network.",
+              "Maintained 99.98% SOC SLA for Tier-2 threat escalations; orchestrated automated Splunk & ArcSight playbooks.",
+              "Spearheaded 2 critical Department of Energy (DOE) cybersecurity audits with zero non-conformances."
+            ]
+          },
+          {
+            "role": "SOC Security Engineer / Analyst",
+            "company": "Nerpcrop Systems",
+            "location": "Hyderabad, India",
+            "period": "2019 — 2021",
+            "highlights": [
+              "Protected 1,500+ employee multi-site infrastructure via LogRhythm SIEM and custom Python log parsers.",
+              "Constructed incident response playbooks reducing Mean Time to Detect (MTTD) by 42% and MTTR by 35%.",
+              "Implemented CIS Benchmark hardening scripts across 400+ Linux/Windows server clusters."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "interactive_threat_lab",
+        "title": "Interactive Incident Response Simulator",
+        "description": "Engaging interactive widget where visitors can simulate triaging a ransomware alert, pivoting on IoCs, and firing automated containment rules."
+      },
+      {
+        "id": "contact_vault",
+        "title": "Encrypted Contact Vault & Inquiry Form",
+        "description": "Fully functional FastAPI + MongoDB contact dispatch with testable attributes, instant feedback, and social links (LinkedIn, Email, GitHub)."
+      }
+    ]
+  },
+  "motion_and_interactions": {
+    "smooth_scrolling": "Lenis momentum scroll wrapper on root",
+    "framer_motion_specs": {
+      "headline_reveal": "Masked lines with y: '100%' -> y: '0%', stagger: 0.12s, ease: [0.16, 1, 0.3, 1]",
+      "bento_stagger": "Fade in with y: 24, viewport once, amount: 0.2",
+      "radar_sweep": "Continuous 360deg rotation at 4s linear loop",
+      "interactive_cards": "Hover scale 1.015, border glow transition 0.3s ease"
+    }
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG AA (APCA contrast verified)",
+    "prefers_reduced_motion": "Supported — disables canvas radar animations and replaces masked kinetic reveals with standard opacity transitions",
+    "data_testids": {
+      "nav": "nav-main",
+      "hero_cta": "hero-contact-button",
+      "download_resume": "hero-resume-download",
+      "skills_filter": "skills-category-tab",
+      "exp_accordion": "experience-card-toggle",
+      "contact_form": "contact-form",
+      "contact_submit": "contact-form-submit",
+      "threat_simulator": "threat-sim-trigger"
+    }
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1763128516808-785e80c1dd68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHw0fHxjeWJlciUyMHNlY3VyaXR5JTIwZW5naW5lZXIlMjB0ZWNoJTIwcG9ydHJhaXQlMjBhYnN0cmFjdHxlbnwwfHx8fDE3OTA5MzQ2NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "hero_background_or_portrait",
+      "description": "Cybersecurity engineer working across multi-monitor SOC dashboard display",
+      "placement": "Hero section dynamic background card with subtle dark overlay"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxjeWJlciUyMHNlY3VyaXR5JTIwZW5naW5lZXIlMjB0ZWNoJTIwcG9ydHJhaXQlMjBhYnN0cmFjdHxlbnwwfHx8fDE3OTA5MzQ2NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "about_feature_visual",
+      "description": "Silhouette engineer against high-density blue and green data visualization wall",
+      "placement": "About / Mission section visual backdrop"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "1. Update `frontend/src/index.css` to import `@fontsource-variable/space-grotesk`, `@fontsource/ibm-plex-sans`, and `@fontsource-variable/jetbrains-mono`. Set `--font-heading: 'Space Grotesk Variable', sans-serif;` and `--font-sans: 'IBM Plex Sans', sans-serif;`.",
+    "2. Implement smooth Lenis scrolling in `frontend/src/App.tsx` or a custom `SmoothScrollProvider` wrapper.",
+    "3. Build an original SVG geometric shield/radar mark in the fixed Glass Nav with brand label 'ZC // SOC-DEFENSE'.",
+    "4. Create the Interactive Threat Simulation Lab component where recruiters and visitors can test Zeel's triage methodology.",
+    "5. Ensure backend `/api/contact` route in FastAPI `backend/routers/contact.py` stores inquiries in MongoDB `inquiries` collection with validation, and seed initial verified telemetry in `backend/seed.py`.",
+    "6. Make sure every button, input, accordion, and filter has precise `data-testid` attributes as specified in accessibility guidelines."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not produce generic AI template styling with centered default cards. Use tight letter tracking on headings, Swiss brutalist borders with 1px slate strokes, terminal glowing micro-badges, and generous padding.",
+    "Never use pure black #000000; use rich obsidian #090B0E with emerald and radar cyan accents.",
+    "Ensure all motion/framer-motion animations have fallback for `prefers-reduced-motion`.",
+    "Use sonner for form success notifications."
+  ]
+}
