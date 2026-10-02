@@ -22,7 +22,7 @@ export function Contact() {
               <p className="mt-5 text-base leading-relaxed text-slate-400">
                 Building or scaling a security operations capability? Hiring for a SOC
                 that defends something that matters? Reach out directly on any of these
-                channels — fastest response over email or LinkedIn.
+                channels - fastest response over email or LinkedIn.
               </p>
             </Reveal>
           </div>

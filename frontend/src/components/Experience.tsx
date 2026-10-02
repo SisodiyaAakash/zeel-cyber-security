@@ -8,15 +8,15 @@ const ROLES = [
     company: "Oncor Electric Delivery",
     location: "Texas, USA",
     role: "Cybersecurity Analyst",
-    period: "Nov 2022 — Present",
+    period: "Nov 2022 - Present",
     current: true,
     brief:
-      "Defending the largest regulated electric transmission & distribution utility in Texas — 10M+ customers — across IT and OT environments, aligned to NERC CIP.",
+      "Defending the largest regulated electric transmission & distribution utility in Texas - 10M+ customers - across IT and OT environments, aligned to NERC CIP.",
     bullets: [
       "Monitored and analyzed security events using ArcSight, Splunk and LogRhythm to detect threats and initiate incident response.",
       "Investigated and triaged alerts from firewalls, IPS/IDS systems, proxies, antivirus software and endpoints.",
       "Performed SNORT-based packet analysis and log correlation; verified custom rules and responded to incidents effectively.",
-      "Managed DDoS mitigation using Akamai and Arbor — traffic profiling, baseline thresholds and cloud mitigation strategies.",
+      "Managed DDoS mitigation using Akamai and Arbor - traffic profiling, baseline thresholds and cloud mitigation strategies.",
       "Implemented IP blacklisting and whitelisting procedures at the network level for threat containment.",
     ],
     env: "ArcSight · Splunk · LogRhythm · Palo Alto · Check Point · SNORT · Akamai · Arbor",
@@ -26,13 +26,13 @@ const ROLES = [
     company: "Nerpcrop Systems Pvt. Ltd.",
     location: "Hyderabad, India",
     role: "Cybersecurity Analyst",
-    period: "Nov 2020 — Oct 2022",
+    period: "Nov 2020 - Oct 2022",
     current: false,
     brief:
-      "Enterprise security & compliance — policy frameworks, risk assessments and mission-critical government audits for a 1,500+ employee site.",
+      "Enterprise security & compliance - policy frameworks, risk assessments and mission-critical government audits for a 1,500+ employee site.",
     bullets: [
       "Developed, reviewed and updated security policies aligned with NIST 800-53, ensuring compliance and audit readiness.",
-      "Supported two Department of Energy security audits with evidence, remediation plans and gap closures — contributing to successful certification.",
+      "Supported two Department of Energy security audits with evidence, remediation plans and gap closures - contributing to successful certification.",
       "Conducted periodic risk assessments and security inspections for a 1,500+ employee site, validating control effectiveness.",
       "Monitored and investigated SIEM alerts (Splunk, ArcSight, LogRhythm), escalating per SOC process and reducing incident response time.",
       "Delivered security awareness sessions and documented incident reports, lessons learned and process improvement plans.",
@@ -146,7 +146,7 @@ export function Experience() {
         </div>
         <Reveal delay={0.15}>
           <p className="mt-10 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            EDUCATION — B.Tech, Computer Science & Engineering
+            EDUCATION - B.Tech, Computer Science & Engineering
           </p>
         </Reveal>
       </div>

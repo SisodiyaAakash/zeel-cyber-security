@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <Logo size={26} />
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            ZC // SOC-DEFENSE — Zeel Chaudhari
+            ZC // SOC-DEFENSE - Zeel Chaudhari
           </span>
         </div>
         <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-600">

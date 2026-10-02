@@ -117,7 +117,7 @@ export function Hero() {
           <div className="lg:col-span-7">
             <MaskedLine delay={0.05} reduced={!!reduced}>
               <span className="font-mono text-xs uppercase tracking-[0.3em] text-emerald-400">
-                {"// Zeel Chaudhari — Security Operations Center"}
+                {"// Zeel Chaudhari - Security Operations Center"}
               </span>
             </MaskedLine>
             <h1 className="mt-6 font-heading font-extrabold uppercase tracking-tighter leading-[0.98] text-4xl sm:text-5xl lg:text-7xl">
@@ -140,7 +140,7 @@ export function Hero() {
               transition={{ delay: 0.65, duration: 0.7, ease: EASE }}
             >
               Cybersecurity Analyst with 5+ years in SOC operations, threat detection and
-              incident response across energy, utilities and enterprise environments —
+              incident response across energy, utilities and enterprise environments -
               turning raw telemetry into containment.
             </motion.p>
             <motion.div

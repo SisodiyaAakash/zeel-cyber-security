@@ -7,16 +7,16 @@ type Step = { alert: string; prompt: string; options: Option[] };
 
 const STEPS: Step[] = [
   {
-    alert: "ALERT 09:41:07 — SIEM flags ransomware behaviour on substation host HMI-04",
+    alert: "ALERT 09:41:07 - SIEM flags ransomware behaviour on substation host HMI-04",
     prompt: "First move?",
     options: [
       { label: "Reboot the HMI to clear the process", correct: false, feedback: "Rebooting destroys volatile evidence. The threat persists in the image." },
-      { label: "Isolate host, capture volatile memory", correct: true, feedback: "Correct. Contain first, preserve forensics — blast radius stops here." },
-      { label: "Dismiss — likely a false positive", correct: false, feedback: "Ransomware on OT gear is never dismissed. Escalation missed." },
+      { label: "Isolate host, capture volatile memory", correct: true, feedback: "Correct. Contain first, preserve forensics - blast radius stops here." },
+      { label: "Dismiss - likely a false positive", correct: false, feedback: "Ransomware on OT gear is never dismissed. Escalation missed." },
     ],
   },
   {
-    alert: "HOST ISOLATED — logs show PowerShell spawned by winword.exe, beaconing to 185.220.x.x",
+    alert: "HOST ISOLATED - logs show PowerShell spawned by winword.exe, beaconing to 185.220.x.x",
     prompt: "Next action?",
     options: [
       { label: "Block hash fleet-wide, blacklist the C2 IP", correct: true, feedback: "Correct. Custom containment rules cut command & control across the grid." },
@@ -25,10 +25,10 @@ const STEPS: Step[] = [
     ],
   },
   {
-    alert: "C2 SEVERED — scope unknown. 400+ endpoints share the same image.",
+    alert: "C2 SEVERED - scope unknown. 400+ endpoints share the same image.",
     prompt: "Final sweep?",
     options: [
-      { label: "Restore HMI-04 from backup, move on", correct: false, feedback: "Without a retro-hunt you restore blind — sibling infections stay live." },
+      { label: "Restore HMI-04 from backup, move on", correct: false, feedback: "Without a retro-hunt you restore blind - sibling infections stay live." },
       { label: "Retro-hunt IoCs in Splunk, force cred resets", correct: true, feedback: "Correct. Full-scope hunt + credential hygiene. Incident closed at root cause." },
       { label: "Raise the SIEM alert threshold", correct: false, feedback: "Quieter dashboards, louder breach. Tuning is not remediation." },
     ],
@@ -74,7 +74,7 @@ export function ThreatLab() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-400">
                 A live-fire triage drill. A ransomware alert just hit an OT substation
-                console — make the calls Zeel makes in the SOC and see if you contain it
+                console - make the calls Zeel makes in the SOC and see if you contain it
                 at root cause.
               </p>
             </Reveal>
@@ -85,7 +85,7 @@ export function ThreatLab() {
                 {!started ? (
                   <div className="flex h-full min-h-[340px] flex-col items-center justify-center text-center">
                     <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber-400">
-                      ● Incoming incident — severity: critical
+                      ● Incoming incident - severity: critical
                     </p>
                     <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
                       Ransomware signatures detected on grid substation HMI-04. You are
@@ -111,8 +111,8 @@ export function ThreatLab() {
                     </p>
                     <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
                       {score === STEPS.length
-                        ? "Textbook containment — detected, isolated, eradicated at root cause. This is the standard Zeel operates at."
-                        : "Containment is a discipline. Zeel's playbooks — hardened across two DOE audits — get every one of these calls right."}
+                        ? "Textbook containment - detected, isolated, eradicated at root cause. This is the standard Zeel operates at."
+                        : "Containment is a discipline. Zeel's playbooks - hardened across two DOE audits - get every one of these calls right."}
                     </p>
                     <button
                       type="button"
