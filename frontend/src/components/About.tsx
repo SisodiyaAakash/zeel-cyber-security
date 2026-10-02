@@ -12,7 +12,7 @@ export function About() {
     <section id="about" className="relative py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <Tag>01 // Profile</Tag>
+          <Tag>// Profile</Tag>
         </Reveal>
         <div className="mt-8 max-w-4xl">
           <Reveal delay={0.1}>

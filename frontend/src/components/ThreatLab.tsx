@@ -64,7 +64,7 @@ export function ThreatLab() {
     <section id="lab" className="relative py-24 lg:py-32 border-t border-slate-800/60 bg-[#0B1015]/40">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <Tag>04 // Threat Lab</Tag>
+          <Tag>// Threat Lab</Tag>
         </Reveal>
         <div className="mt-8 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">

@@ -6,7 +6,6 @@ const LINKS = [
   { label: "Arsenal", href: "#skills" },
   { label: "Deployments", href: "#experience" },
   { label: "Threat Lab", href: "#lab" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export function Nav() {

@@ -48,7 +48,7 @@ export function Experience() {
     <section id="experience" className="relative py-24 lg:py-32 border-t border-slate-800/60">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <Tag>03 // Deployments</Tag>
+          <Tag>// Deployments</Tag>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="mt-8 font-heading text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight uppercase">

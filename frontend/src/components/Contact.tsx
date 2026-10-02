@@ -11,7 +11,7 @@ export function Contact() {
     <section id="contact" className="relative py-24 lg:py-32 border-t border-slate-800/60">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <Tag>05 // Contact Vault</Tag>
+          <Tag>// Contact Vault</Tag>
         </Reveal>
         <div className="mt-8 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6">
