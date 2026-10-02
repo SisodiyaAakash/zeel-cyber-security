@@ -186,7 +186,7 @@ export function Hero() {
         </div>
         <motion.div
           data-testid="hero-stats"
-          className="mt-20 grid grid-cols-2 lg:grid-cols-4 border border-slate-800 divide-x divide-y lg:divide-y-0 divide-slate-800"
+          className="mt-20 grid grid-cols-2 lg:grid-cols-4 border border-slate-800 divide-y lg:divide-y-0 lg:divide-x divide-slate-800"
           initial={{ opacity: 0, y: reduced ? 0 : 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8, ease: EASE }}
